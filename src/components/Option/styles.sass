@@ -1,0 +1,25 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+.option
+  background-color: variables.$bg-color-third
+  border-radius: .5rem
+  padding: 1rem
+  margin-bottom: 1rem
+  opacity: .8
+  transition: .4s
+  cursor: pointer
+
+  &:hover:not(.wrong)
+    opacity: 1
+
+  p
+    margin-bottom: 0 !important
+
+.correct
+  background-color: variables.$bg-color-correct
+  font-weight: bold
+
+.wrong
+  opacity: 0.4
+  cursor: not-allowed
